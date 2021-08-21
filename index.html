@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>MAC-BOOK</title>
+</head>
+
+<body>
+    <main>
+        <section class="container mx-auto px-4 m-4 ">
+
+            <div class=" grid grid-cols-2">
+                <!-- image add -->
+                <div class="flex justify-end">
+                    <div class="m-5 px-11 py-7 w-full h-96">
+                        <img class="w-8/12" src="mac.png">
+                        <h1 class="flex justify-start  m-4 font-bold text-6xl text-green-400">Mac-Book</h1>
+                    </div>
+                </div>
+
+
+                <!-- main part buy mac -->
+
+                <div class="py-9">
+                    <div>
+                        <h1 class="text-4xl font-bold">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+
+                        <div class="py-3">
+                            <h6>iMac is a family of all-in-one Macintosh desktop computers designed and built
+                                by Apple Inc.
+                                ... It also includes a dual microphone setup and includes solid-state drive (SSD) or
+                                hard
+                                disk storage, or an Apple Fusion Drive, a hybrid of solid-state and hard disk drives.
+                            </h6>
+                        </div>
+                    </div>
+                    <!-- add button -->
+                    <div class="py-7">
+
+                        <div>
+                            <p class="font-bold text-lg">Memory</p>
+                        </div>
+                        <div class="flex justify-start  py-3">
+                            <button id="8gb-memory"
+                                class=" p-3 border-solid border rounded border-gray-300 shadow hover:bg-yellow-500"><span
+                                    class="font-medium">8gb unified
+                                    memory</span>
+
+                            </button>
+                            <button id="16gb-memory"
+                                class="mx-5 p-3 border-solid border rounded border-gray-300 shadow hover:bg-red-700"><span
+                                    class="font-medium">16gb unified
+                                    memory</span></button>
+                        </div>
+                    </div>
+                    <!-- 2nd add button -->
+                    <div class="py-7">
+
+                        <div>
+                            <p class="font-bold text-xl">Storage</p>
+                        </div>
+                        <div class="flex justify-start  py-3">
+                            <button id="256gb-ssd"
+                                class=" p-3 border-solid border rounded border-gray-300 shadow hover:bg-green-500"><span
+                                    class="font-medium">256gb SSD storage</span>
+
+                            </button>
+                            <button id="512gb-ssd"
+                                class=" mx-5 p-3 border-solid border rounded border-gray-300 shadow hover:bg-red-700"><span
+                                    class="font-medium">512gb SSD storage</span></button>
+
+
+                            <button id="1tb-ssd"
+                                class="mx-2 p-3 border-solid border rounded border-gray-300 shadow hover:bg-green-400"><span
+                                    class="font-medium">1TB SSD storage</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 3rd add -->
+                    <div class="py-7">
+
+                        <div>
+                            <p class="font-bold text-lg">Choose your delivery option</p>
+                        </div>
+                        <div class="flex justify-start  py-3">
+                            <button id="free-delivery"
+                                class=" p-3 border-solid border rounded border-gray-300 shadow hover:bg-yellow-500"><span
+                                    class="font-medium">Friday 25 august free delivery</span>
+
+                            </button>
+                            <button id="unFree-delivery"
+                                class=" mx-5 p-3 border-solid border rounded border-gray-300 shadow hover:bg-red-700"><span
+                                    class="font-medium">Friday 31 august delivery with 20$</span></button>
+                        </div>
+                    </div>
+
+
+                    <!-- price calculation -->
+                    <div class="py-12 divide-y-2 divide-black divide-opacity-10 border-solid rounded">
+                        <div class="flex space-x-36">
+                            <h5>
+                                <span class="font-bold"> Best-Price Mac</span>
+                            </h5>
+                            <h5>
+                                <span class="font-bold">$<span id="bestPrice">1299</span></span>
+                            </h5>
+
+                        </div>
+                        <div class="flex space-x-32">
+                            <h5>
+                                <span class="font-bold">Extra memory coast</span>
+                            </h5>
+                            <h5>
+                                <span class="font-bold">$<span id="memory-cost">0</span></span>
+                            </h5>
+
+                        </div>
+
+                        <div class="flex space-x-36">
+                            <h5>
+                                <span class="font-bold">Extra storage cost</span>
+                            </h5>
+                            <h5>
+                                <span class="font-bold">$<span id="storage-cost">0</span></span>
+                            </h5>
+
+                        </div>
+
+                        <div class="flex space-x-40">
+                            <h5>
+                                <span class="font-bold">Delivery Charge </span>
+                            </h5>
+                            <h5>
+                                <span class="font-bold">$<span id="delivery-cost">0</span></span>
+                            </h5>
+
+                        </div>
+
+
+
+
+                        <div class="flex space-x-40 border-black border-2">
+                            <h5>
+                                <span class="font-bold">Total Price </span>
+                            </h5>
+                            <h5 class="font-bold">=$<span id="total-cost">1299</span>
+                            </h5>
+                        </div>
+
+
+
+                    </div>
+                    <!-- input button -->
+                    <h3 class="text-xl font-bold">
+                        ADD a promo code
+                    </h3>
+                    <div class="py-4">
+                        <form>
+                            <input id="promo-input" class=" border-black h-10" type="text"
+                                placeholder="Type promo-code">
+                            <button id="promo-apply-button" class=" border rounded bg-green-500 w-52 h-12"> <span
+                                    class="font-bold"> Apply
+                                    Code</span></button>
+
+                        </form>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+        </section>
+    </main>
+    <footer>
+        <h1 class="flex justify-center">
+            <span class="font-bold text-3xl">Total:$<span id="grand-total-cost">1299</span></span>
+        </h1>
+    </footer>
+
+
+
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
